@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab8</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  $("#hide").click(function(){
+	    $("#img21").hide();
+	  });
+	});
+
+	  $(document).ready(function(){
+	  $("#show").click(function(){
+	    $("#img21").show();
+	  });
+	});
+
+	  $(document).ready(function(){
+	  $("#fi").click(function(){
+	    $("#img31").fadeIn(1000);
+	    $("#img32").fadeIn("slow");
+	  });
+	});
+	  $(document).ready(function(){
+	  $("#fo").click(function(){
+	    $("#img31").fadeOut(1000);
+	    $("#img32").fadeOut("slow");
+	  });
+	});
+
+	  $(document).ready(function(){
+	  $("#ft").click(function(){
+	    $("#img31").fadeTo("slow", 0.15);
+	    $("#img32").fadeTo("slow", 0.4);
+	  });
+	});
+
+	  $(document).ready(function(){
+	  $("#flip").click(function(){
+	    $("#img43").slideDown("slow");
+	  });
+	});
+		$(document).ready(function(){
+	  $("#flip").click(function(){
+	    $("#img43").slideUp("slow");
+	  });
+	});
+		$(document).ready(function(){
+	  $("#ani").click(function(){
+	  	var mg = $("#img51");
+	    mg.animate({width: '250px'},"slow");
+	    mg.animate({width: '300px'},"slow");
+	  });
+	});
+	  $(document).ready(function(){
+	  $("#st").click(function(){
+	    $("#img51").stop();
+	  });
+	});
+	</script>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+</head>
+<body style="background-color: #dedef0">
+<div style="width: 40%; float:left; margin-bottom:25px;">
+   <h3>Part 1</h3>
+   <div style="margin: 50px;">
+   	<form class="Flower" action="/action_page.php">
+		Full name: <input type="text" name="name" placeholder="Введите запрос"><br><br>
+		Address: <input type="text" name="address" placeholder="Введите запрос"><br><br>
+		Telephone:<input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /><br><br>
+	<hr>
+	<div style="margin: 50px;">
+		<p>Please select your city:</p>
+	    <input type="radio" name="city" value="Kazakh">NurSultan</h5><br>
+	    <input type="radio" name="city" value="Russian">Almaty<br>
+	    <input type="radio" name="city" value="English">Shymkent<br>
+	    <input type="radio" name="city" value="Kazakh">Karagandy<br>
+	    <input type="radio" name="city" value="Russian">Aktau<br>
+	    <input type="radio" name="city" value="English">Taraz<br>  
+	</div>  
+	<hr>
+	<div style="margin: 50px;">
+	Enter a date order:
+	<input type="date" name="orderdate">
+	</div> 
+	<hr>
+	<div style="margin: 50px;">
+		<p>Please select Flower:</p>
+		<h2>Select Flower</h2>
+	    <select name="Flower">
+	    <option value="Ранункулюс"><b><em>Ранункулюс</em></b></option>
+	    <option value="Гвоздики "><b><em>Гвоздики </em></b></option>
+	    <option value="Голландские розы"><b><em>Голландские розы</em></b></option>
+	    <option value="Пионы"><b><em>Пионы</em></b></option>
+	    <option value="Хризантемы"><b><em>Хризантемы</em></b></option>
+	    <option value="Астры"><b><em>Астры</em></b></option>
+	    <option value="Лилии"><b><em>Лилии</em></b></option>
+		</select>
+	</div>
+	<hr>
+	<div id = "checkk" style="margin: 50px;">
+			<p>Please select color:</p>
+		    <input type="checkbox" name="red" value="Color"  checked>Color: red<br>
+		    <input type="checkbox" name="yellow" value="Color">Color: yellow<br>
+		    <input type="checkbox" name="white" value="Color">Color: white<br>
+		    <input type="checkbox" name="green" value="Color">Color: green<br>
+		    <input type="checkbox" name="blue" value="Color">Color: blue<br>
+	</div>
+	<input type="submit" value="Submit" id="submit">
+</form>
+</div>
+</div>
+<div style="width: 60%; float:right;  margin-bottom:25px;">
+   <h3>Part 2</h3>
+   <div style="margin-bottom: 25px">
+   <button id ="hide">Hide</button>
+   <button id = "show">Show</button>
+   <img id="img21" src="pr8/lab81.gif">
+	</div>
+   <hr>
+   <div style="margin-bottom: 25px">
+   <button id = "fi">FadeIn</button>
+   <button id = "fo">FadeOut</button>
+   <button id = "ft">FadeTo</button>
+   	<img style="width: 300px;" id="img31" src="pr8/2.png">
+   	<img style="width: 300px;"  id="img32" src="pr8/1.png">
+	</div>
+   <hr>
+   <div style="margin-bottom: 25px">
+   <div id="flip">Click to slide down panel</div>
+   <img id="img43" src="pr8/lab83.gif">
+	</div>
+   <hr>
+   <div style="margin-bottom: 25px; margin-top: 25px;">
+   <button id= "ani">Animate</button>
+   <button id = "st">Stop</button>
+   <img style="width: 300px;" id="img51" src="rec.jpg">
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style>
+		#window{
+			width: 350px;
+			height: 650px;
+			margin:40px auto;
+			background: #fff;
+			border-radius: 15px;
+			border:1px solid #ccc;
+			z-index: 150;
+		}
+		.form{
+			width: 275px;
+			margin: 0 auto 20px auto;
+			text-align: left;
+		}
+		.input{
+			width: 260px;
+			padding: 5px;
+			margin-bottom: 10px;
+			font-family: 'Gupter', serif;
+		}
+		.radio{
+			margin-bottom: 10px;
+		}
+		.input-sub{
+			background: #fcb2bf; 
+			cursor: pointer;
+			border: 1px sloid #fa4252;
+			width: 260px;
+			padding: 5px;
+			margin-bottom: 10px;
+			font-family: 'Gupter', serif;
+		}
+		.input-sub:hover{
+			background: #fa697c;
+		}
+		body{
+			background-image: url("img/sign.jpg"); 
+		}
+		.che{
+			text-align: left;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="window">
+    <div class="form">
+	<form action="/action_page.php">
+		<h3>Дополнительные услуги:</h3>
+		<input class="che" type="checkbox" name="ch" value="image">Мишка<p>
+		<input class="che" type="checkbox" name="ch" value="image">Записка<p>
+		<input class="che" type="checkbox" name="ch" value="image">3 воздушных шара<p>
+		<input class="che" type="checkbox" name="ch" value="image">Торт<p>
+		<input type="text" placeholder="Город" name="name1" class="input">
+		<input type="text" placeholder="Адрес" name="name2" class="input">
+		<input type="text" placeholder="Ф.И.О." name="name1" class="input">
+		<input type="text" placeholder="Емеил" name="name2" class="input">
+		<input type='tel' placeholder="Мобильный телефон" name="tel" class="input">
+		<input type="text" placeholder="Ф.И.О. получателя" name="name1" class="input">
+		<input type='tel' placeholder="Телефон получателя" name="tel" class="input">
+		<input type="text" placeholder="Пожелания к получателю" name="name2" class="input">
+		<input type="submit" placeholder="Ок" name="sab" class="input-sub">
+	</form>
+</div>
+</div>
+</body>
+</html>

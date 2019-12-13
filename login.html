@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style>
+		#window{
+			width: 350px;
+			height: 450px;
+			margin:40px auto;
+			background: #fff;
+			border-radius: 15px;
+			border:1px solid #ccc;
+			z-index: 150;
+		}
+		.form{
+			width: 275px;
+			margin: 50px auto 20px auto;
+			text-align: center;
+		}
+		.input{
+			width: 260px;
+			padding: 5px;
+			margin-bottom: 10px;
+			font-family: 'Gupter', serif;
+		}
+		.radio{
+			margin-bottom: 10px;
+		}
+		.log{
+			margin-top: 3px; 
+			background-color: #fa697c;
+			text-align: center;
+		}
+		.input-sub{
+			background: #fcb2bf; 
+			cursor: pointer;
+			border: 1px sloid #fa4252;
+			width: 260px;
+			padding: 5px;
+			margin-bottom: 10px;
+			font-family: 'Gupter', serif;
+		}
+		.input-sub:hover{
+			background: #fa697c;
+		}
+		body{
+			background-image: url("img/sign.jpg"); 
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="window">
+    <div class="form">
+    <div class = "log">
+		<h1>Войти на сайт</h1>
+    </div>
+	<form action="/action_page.php">
+		<input type="email" placeholder="Емеил" name="email1" class="input">
+		<input type="password" placeholder="Пароль" name="pass1" class="input">
+		<input type="submit" placeholder="Регистрация" name="sab" class="input-sub">
+	</form>
+</div>
+</div>
+</body>
+</html>

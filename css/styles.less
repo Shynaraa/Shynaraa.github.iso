@@ -1,0 +1,29 @@
+// selectors in mixins
+.my-hover-mixin{
+  &:color{
+    color: #898377;
+      }
+}
+.a{
+  .my-hover-mixin();
+}
+// not outputting
+.my-mixin{
+  min-width: 320px;
+  font-size: 14px;
+}
+.my-nout-mixin(){
+  font-family: 'Playfair Display', serif;
+  color: #626262;
+}
+body {
+	.my-mixin();
+  .my-nout-mixin();
+}
+//mixins
+#flip {
+  width: 1170px;
+}
+.mix-in{
+  #flip();
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 11</title>
+	<style type="text/css">
+		.l{
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<video class = "l" id="video" width="200px" height="200px">
+		<source src="naruto.mp4" type="video/mp4">Your browser doesn't support the video tag.
+	</video><br>
+	<button onclick="auto()">Autoplay</button>
+	<button onclick="contr()">Controls</button>
+	<button onclick="loop()">Loop</button>
+	<button onclick="mute()">Muted</button>
+	<script type="text/javascript">
+		var vid = document.getElementById('video')
+		function auto() {
+			if (vid.autoplay=!true) {
+				vid.autoplay=false;
+				vid.load();
+			}else{
+				vid.autoplay=true;
+				vid.load();			
+			}
+		}
+		function contr() {
+			if (vid.controls==false) {
+				vid.controls=true;
+			}else{
+				vid.controls=false;         
+			}
+			
+		}
+		function loop() {
+			if (vid.loop==true) {
+				vid.loop=false;
+			}else{
+				vid.loop=true;
+			}
+		}
+		function mute() {
+			if (vid.muted==false) {
+				vid.muted=true;
+			}else{
+				vid.muted=false;
+			}
+		}
+	</script><br>
+	<audio class = "l" controls>
+		<source src="Ninety One - Bari Biled.mp3" type="audio/mp3">
+	</audio><br>
+	<iframe class = "l" width="560" height="315" src="https://www.youtube.com/embed/ERcwO7AryeA?autoplay=1&loop=1&controls=1 "></iframe><br>
+	<object class = "l" width="1000px" height="500px" data="lab8.html"></object><br>
+	<embed class = "l" width="400px" src="zag2.png">
+	
+
+
+</body>
+</html>

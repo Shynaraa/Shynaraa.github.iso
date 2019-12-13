@@ -1,0 +1,22 @@
+.my-hover-mixin:color {
+  color: #898377;
+}
+.a:color {
+  color: #898377;
+}
+.my-mixin {
+  min-width: 320px;
+  font-size: 14px;
+}
+body {
+  min-width: 320px;
+  font-size: 14px;
+  font-family: 'Playfair Display', serif;
+  color: #626262;
+}
+#flip {
+  width: 1170px;
+}
+.mix-in {
+  width: 1170px;
+}
